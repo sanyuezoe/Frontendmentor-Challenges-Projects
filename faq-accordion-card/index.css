@@ -1,0 +1,108 @@
+*, *::before, *::after {
+    box-sizing:border-box;
+} 
+
+body {
+    margin:0;
+    font-size: 12px; 
+    font-family: 'Kumbh Sans', sans-serif;
+    color:hsl(237, 12%, 33%);
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-attachment: fixed;
+}
+
+
+/* Typography */
+
+h1 {
+    letter-spacing:1px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+p {
+    color:hsl(240, 6%, 50%);
+}
+
+
+/* layout */
+.container, .img, .question-part  {
+    display: flex;
+}
+
+
+.container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 3em;
+    max-width: 1200px;
+}
+
+.text {
+    background-color: white;
+    width:80%;
+    margin:12.5em auto 7em;
+    border-radius: 20px;
+    padding:11.25em 1.5em 4em;
+    max-width: 600px;
+}
+
+.img {
+    flex-direction: column;
+    position:absolute;
+    top:10px;
+}
+
+.img img:last-child {
+    margin-top: -6em;
+}
+
+.question-part {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* interaction */
+
+.arrow-btn {
+    border:none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.arrow-btn img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+.rotate img {
+    transform: rotate(180deg);
+  }
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    height: 1px;
+    background: #a7a6a6;
+    background-image: linear-gradient(to right, #ccc, #5e5e5e, #ccc);
+}
+
+.color-change {
+    color: black;
+    font-weight: 700;
+  }
+
+p{
+    display:none;
+}
+
+p.show {
+    display: block;
+  }
+
+
